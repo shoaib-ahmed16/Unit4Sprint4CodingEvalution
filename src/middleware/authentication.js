@@ -27,7 +27,6 @@ const authentication =async (req,res,next)=>
         let auth =verifyToken(token)
         if(auth)
         {
-            user.user_id =req.user._id;
             next()
         }
     }
