@@ -15,7 +15,7 @@ app.post("/register",register)
 
 app.post("/login",login)
 
-app.use("/todo",todoController)
+app.use("/todos",todoController)
 
 
 module.exports=app;
